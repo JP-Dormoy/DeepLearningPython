@@ -13,9 +13,20 @@ and omits many desirable features.
 """
 
 
-"""
-Test Line. DELEte
-"""
+'''
+Here is the order of commands to run in the Python shell for the introductory implementation shown in Chapter 1.
+Remember to open the Python Shell from within the src folder (where the source files are located)
+
+>>> import mnist_loader
+>>> training_data, validation_data, test_data = \
+... mnist_loader.load_data_wrapper()
+
+>>> import network
+>>> net = network.Network([784, 30, 10])
+
+>>> net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
+Added for test. DELETE this line
+'''
 
 #### Libraries
 # Standard library
